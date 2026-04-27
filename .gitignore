@@ -1,0 +1,21 @@
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Temp files
+*.tmp
+*~
+log.txt
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Perl
+blib/
+_build/
+.cpan*
+*.o
+*.bs
+MYMETA.*
