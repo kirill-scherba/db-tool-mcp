@@ -1,5 +1,7 @@
 # db-tool-mcp
 
+[![Db-tool-mcp](examples/db-tool-mcp.png)](examples/db-tool-mcp.png)
+
 > **Execute SQL queries with sandboxed Perl code filtering — the only MCP server with built-in Safe sandbox for row-level data processing.**
 
 [![Perl](https://img.shields.io/badge/perl-5.40+-blue.svg)](https://www.perl.org/)

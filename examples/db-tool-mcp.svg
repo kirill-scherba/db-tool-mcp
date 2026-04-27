@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="db-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #4facfe; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #00f2fe; stop-opacity: 1" />
+    </linearGradient>
+    <linearGradient id="shield-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #f6d365; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: #fda085; stop-opacity: 1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="400" fill="#1a1a2e" />
+
+  <ellipse cx="200" cy="180" rx="60" ry="20" fill="url(#db-gradient)" />
+  <rect x="140" y="180" width="120" height="80" fill="url(#db-gradient)" />
+  <ellipse cx="200" cy="260" rx="60" ry="20" fill="url(#db-gradient)" />
+
+  <path d="M190 200 L210 200 L210 240 L190 240 Z" fill="#4169e1" />
+  <ellipse cx="200" cy="190" rx="20" ry="5" fill="#4169e1" />
+  <path d="M185 220 C185 200 215 200 215 220 C215 230 185 230 185 220 Z" fill="#4169e1" />
+
+  <path d="M200 130 L230 150 L230 180 C230 200 200 220 200 220 C200 220 170 200 170 180 L170 150 Z" fill="url(#shield-gradient)" stroke="#ffffff" stroke-width="2" />
+  <polyline points="190 175 198 183 210 168" fill="none" stroke="#ffffff" stroke-width="3" />
+
+  <text x="200" y="120" font-family="monospace" font-size="36" fill="#39ff14" text-anchor="middle">&lt;/&gt;</text>
+  <text x="200" y="320" font-family="monospace" font-size="28" fill="#ffffff" text-anchor="middle">db-tool-mcp</text>
+  <text x="200" y="350" font-family="monospace" font-size="16" fill="#ffffff" text-anchor="middle">SQL · SANDBOX · PERL</text>
+</svg>
