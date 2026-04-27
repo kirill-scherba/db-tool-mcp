@@ -1,10 +1,12 @@
-# Active Context — db-tool-mcp
+# db-tool-mcp — Project Status
 
 ## Current Status
 
-Published on GitHub and submitted to Cline Marketplace (issue #1461).
+✅ Published on GitHub. Submitted to Cline Marketplace (issue #1461).
 
-## What's Been Done
+## Changelog
+
+### 2026-04-28
 
 - Created `db-tool-mcp.pl` — MCP server in Perl (JSON-RPC 2.0 over stdin/stdout)
 - Full DBI support (SQLite, MySQL, PostgreSQL)
@@ -15,11 +17,11 @@ Published on GitHub and submitted to Cline Marketplace (issue #1461).
 - llms-install.md for Cline Marketplace
 - Logo in SVG + PNG
 - Git repo pushed to github.com/kirill-scherba/db-tool-mcp
+- docs/ with CONTEXT.md, DESIGN.md, STATUS.md (Memory Bank)
 
 ## Next Steps / Ideas
 
-- Reddit r/perl post (user can't access Reddit — AI should prepare text)
+- Reddit r/perl post
 - Hacker News post
-- Memory Bank improvements
-- Maybe: add more Safe-whitelisted modules
-- Maybe: support for EXPLAIN and query analysis
+- Add more Safe-whitelisted modules
+- Support for EXPLAIN and query analysis
