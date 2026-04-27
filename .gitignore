@@ -8,6 +8,9 @@
 *~
 log.txt
 
+# Memory Bank (AI assistant files — not for public)
+.memory-bank/
+
 # OS files
 .DS_Store
 Thumbs.db
