@@ -2,9 +2,9 @@
 
 ## MCP Configuration
 
-### Cline (VS Code)
+### Cline (VS Code / code-server)
 
-Add to `/home/kirill/.local/share/code-server/User/globalStorage/saoudrizwan.claude-dev/settings/cline_mcp_settings.json`:
+Add to your Cline MCP settings file (`cline_mcp_settings.json`):
 
 ```json
 {
@@ -19,6 +19,8 @@ Add to `/home/kirill/.local/share/code-server/User/globalStorage/saoudrizwan.cla
   }
 }
 ```
+
+*Tip: On VS Code / code-server the settings file is usually located at `~/.local/share/code-server/User/globalStorage/saoudrizwan.claude-dev/settings/cline_mcp_settings.json` or similar.*
 
 ### Claude Desktop
 

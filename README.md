@@ -52,7 +52,7 @@ cd db-tool-mcp
 chmod +x db-tool-mcp.pl
 ```
 
-2. Add to your MCP configuration (`cline_mcp_settings.json`):
+2. Add to your MCP settings file (usually `cline_mcp_settings.json` for Cline, or `claude_desktop_config.json` for Claude Desktop app):
 
 ```json
 {
