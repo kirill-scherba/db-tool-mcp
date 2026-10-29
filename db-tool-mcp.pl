@@ -365,9 +365,9 @@ sub execute_tool {
 
 log_message("INFO", "db-tool-mcp server started");
 
-# Notify the client that we are ready
-send_notification("initialized");
-
+# No unsolicited notification here: MCP clients expect a server to speak only when spoken to, and an
+# "initialized" line with no id arriving before the first request made every proxy pair it with the next
+# answer - db-tool then returned the previous query's result (29.10.2026).
 LINE: while (my $line = <STDIN>) {
     chomp $line;
     next LINE unless $line && $line =~ /\S/;
