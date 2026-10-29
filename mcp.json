@@ -1,0 +1,21 @@
+{
+  "name": "db-tool",
+  "asset_base": "db-tool-mcp",
+  "title": {
+    "ru": "Базы данных",
+    "en": "Databases"
+  },
+  "description": {
+    "ru": "SQL через DBI: SQLite, MySQL, PostgreSQL. Скрипт на Perl, запускается Perl-рантаймом.",
+    "en": "SQL over DBI: SQLite, MySQL, PostgreSQL. A Perl script, run by a Perl runtime."
+  },
+  "category": "data",
+  "install": "script",
+  "command": [
+    "db-tool-mcp.pl"
+  ],
+  "entries": {
+    "any": "db-tool-mcp.pl"
+  },
+  "docs": "https://github.com/kirill-scherba/db-tool-mcp#readme"
+}
