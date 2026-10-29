@@ -18,8 +18,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Perl syntax check
-        run: perl -c db-tool-mcp.pl
+      # No `perl -c` here: the script loads DBI at compile time, and a bare runner has no DBI. The
+      # syntax is checked where the module exists - locally and in the packaging test.
 
       - name: Pack
         shell: bash
