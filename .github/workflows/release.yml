@@ -1,0 +1,40 @@
+# Release: a tag packages the server for the distribution catalog.
+#
+# db-tool is a Perl script with one XS dependency (DBD::SQLite), so it is not compiled into a binary:
+# the archive carries the script, and AnyText runs it with a Perl runtime (the portable one on Windows,
+# the system one on Linux).
+name: release
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+jobs:
+  pack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Perl syntax check
+        run: perl -c db-tool-mcp.pl
+
+      - name: Pack
+        shell: bash
+        run: |
+          set -euo pipefail
+          tag="${GITHUB_REF_NAME#v}"
+          zip="db-tool-mcp_${tag}.zip"
+          zip -q "$zip" db-tool-mcp.pl LICENSE README.md
+          sha256sum "$zip" > "$zip.sha256"
+          cat "$zip.sha256"
+          echo "ZIP=$zip" >> "$GITHUB_ENV"
+
+      - name: Attach to release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            ${{ env.ZIP }}
+            ${{ env.ZIP }}.sha256
